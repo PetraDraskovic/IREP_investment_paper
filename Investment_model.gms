@@ -14,7 +14,7 @@ $include C:\Users\milja\OneDrive\Desktop\inc_file\prices.inc
 ;
 
 
-*wind curves (import wind profiles (second sheet) form Input_data_investment.xlsx)
+*PV curves (import PV profiles (second sheet) form Input_data_investment.xlsx)
 table wind_real(t,w,s)
 *$call =xls2gms r=input!a1:ag169 i=C:\Users\milja\OneDrive\Desktop\solari_rep_tjedni.xlsx o=C:\Users\milja\OneDrive\Desktop\inc_file\wr.inc
 $include C:\Users\milja\OneDrive\Desktop\inc_file\wr.inc
