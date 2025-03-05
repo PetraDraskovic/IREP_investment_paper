@@ -7,14 +7,14 @@ set i /i1*i4/;
 set j /j1*j3/;
 set w /w1*w8/;
 
-*CROPEX day ahead prices
+*CROPEX day ahead prices (import price profiles (first sheet) form Input_data_investment.xlsx)
 table cropexDA(t,w)
 *$call =xls2gms r=input!a1:i169 i=C:\Users\milja\OneDrive\Desktop\cijene_rep_tjedni.xlsx o=C:\Users\milja\OneDrive\Desktop\inc_file\prices.inc
 $include C:\Users\milja\OneDrive\Desktop\inc_file\prices.inc
 ;
 
 
-*wind curves
+*wind curves (import wind profiles (second sheet) form Input_data_investment.xlsx)
 table wind_real(t,w,s)
 *$call =xls2gms r=input!a1:ag169 i=C:\Users\milja\OneDrive\Desktop\solari_rep_tjedni.xlsx o=C:\Users\milja\OneDrive\Desktop\inc_file\wr.inc
 $include C:\Users\milja\OneDrive\Desktop\inc_file\wr.inc
